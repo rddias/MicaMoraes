@@ -1,0 +1,38 @@
+
+  
+.icon {
+    margin-left: 5px
+}
+
+
+.navbar {
+    min-height: 56px;
+}
+
+
+.micalogo  {
+  /*width: 200px;
+  height: 200px;
+  transition: transform 1000ms ease-in-out;
+  position: relative;
+  --transform-origin: left top;
+  */
+  overflow: hidden;
+  max-height: 40px;
+  transition: max-height 1s cubic-bezier(0, 1, 0, 1);
+  
+}
+
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: block !important;
+}
+
+  .micalogo {
+    /*transform: scale(2);*/
+    max-height: 1000px;
+    transition: max-height 1s ease-in-out;
+  }
+}
+  
