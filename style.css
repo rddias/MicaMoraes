@@ -11,12 +11,6 @@
 
 
 .micalogo  {
-  /*width: 200px;
-  height: 200px;
-  transition: transform 1000ms ease-in-out;
-  position: relative;
-  --transform-origin: left top;
-  */
   overflow: hidden;
   max-height: 40px;
   transition: max-height 1s cubic-bezier(0, 1, 0, 1);
@@ -24,15 +18,42 @@
 }
 
 
+.nav-item {
+  display: block;
+}
+
+
+.navbar-collapse {
+  display: flex;
+  
+}
+
 @media (min-width: 992px) {
   .navbar-collapse {
-    display: block !important;
-}
+    display: block !important;     
+    }
 
   .micalogo {
     /*transform: scale(2);*/
     max-height: 1000px;
     transition: max-height 1s ease-in-out;
+  }
+  
+  .navbar-nav {
+    display: block;
+    text-align: center
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 10px
+
+  }
+  
+  .nav-link a{
+
+      border-bottom: 3px solid transparent; 
+    border-color: black;
   }
 }
   
