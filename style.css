@@ -18,47 +18,46 @@
 }
 
 
-.nav-item {
-  display: block;
+.carousel {
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
 }
 
-
-.navbar-collapse {
-  display: flex;
-  
+span.divider {
+  border-right-style: solid;  
+  height: 2.5rem;
 }
 
 @media (min-width: 992px) {
+  
   .navbar-collapse {
-    display: block !important;     
-    }
+    display: flex !important;     
+  }
 
   .micalogo {
-    /*transform: scale(2);*/
     max-height: 1000px;
     transition: max-height 1s ease-in-out;
   }
   
   .navbar-nav {
-    display: block;
-    text-align: center
+    flex-direction: row;  
+    justify-content:  space-around;
+    align-items: center;
+    flex-grow: 1;
   }
-  
-  .nav-item {
-    display: inline-block;
-    margin-right: 10px
 
-  }
-  
-  .nav-link a{
-
-      border-bottom: 3px solid transparent; 
+  .nav-link a {
+    border-right: 3px solid; 
     border-color: black;
   }
-}
   
+  .block_navbar1--display {
+    display: none !important;
+  }
 
-.carousel {
-    border-radius: 20px 20px 20px 20px;
-    overflow: hidden;
+  .block_navbar2--display {
+    display: flex !important;
+  }
 }
+
+

@@ -13,45 +13,74 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style=" background: rgba(255, 255, 255, 0.8);">      
+    <nav class="navbar sticky-top flex-wrap navbar-expand-lg navbar-light" style="background: rgba(255, 255, 255, 0.8);">      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="d-flex ml-auto align-self-center justify-content-around">  
-          <div class="d-flex icon ">  
+        <div class="d-inline-flex ml-auto">  
+          <div class="icon">  
             <img  id="search_icon" src="https://juliafaria.com.br/wp-content/themes/juliafaria/assets/img/icone_buscar.png" width="23" height="20">
           </div>  
-          <div class="d-flex icon">
+          <div class="icon">
             <img src="https://juliafaria.com.br/wp-content/plugins/qtranslate-x/flags/lang_pb.png" width="30" height="20">
           </div>  
-          <div class="d-flex icon">  
+          <div class="icon">  
             <img src="https://juliafaria.com.br/wp-content/plugins/qtranslate-x/flags/lang_en.png" width="30" height="20">            
           </div>
         </div> 
+      <div class="container-fluid"> 
+        <div class="d-flex flex-fill block_navbar1 block_navbar1--display" style="margin-bottom: 1.5rem">
+          <div class="collapse navbar-collapse" aria-expanded="false" id="navbarText" style="border-top-style: solid; border-bottom-style: solid; border-color: coral; border-width: 1px;">
+            <ul class="navbar-nav">
+              <li class="nav-item active m-auto">
+                <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 700; color: black;" href="#">About Me<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 100; color: black;" href="#">Videos</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 700; color: black;" href="#">Travel</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 100; color: black;" href="#">Photos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
-
-    <div class="container-fluid">
-      <div class="d-flex justify-content-center micalogo" >
-          <img src="MicaMoraes.png" style="max-height: 100%; max-width: auto;  object-fit: contain;">
-      </div>
-      <div class="collapse navbar-collapse" aria-expanded="false" id="navbarText" style="border-top-style: solid; border-bottom-style: solid; border-color: coral; border-width: 1px; margin-bottom: 20px; justify-content: center;">
-        <ul class="navbar-nav">
-          <li class="nav-item active" style="text-align: center;">
-            <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 700; color: black;" href="#">About Me <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item" style="text-align: center;">
-            <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 100; color: black;" href="#">Videos</a>
-          </li>
-          <li class="nav-item" style="text-align: center;">
-            <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 700; color: black;" href="#">Travel</a>
-          </li>
-          <li class="nav-item" style="text-align: center;">
-            <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 100; color: black;" href="#">Photos</a>
-          </li>
-        </ul>
-      </div>
+   
+    <div class="d-flex justify-content-center micalogo">
+      <img class="img-fluid" src="MicaMoraes.png" style="object-fit: contain;">
     </div>
+    <div class="container-fluid"> 
+      <div class="block_navbar2 block_navbar2--display" style="display: none; max-height: 100%; max-width: 100%;">
+        <div class="collapse navbar-collapse" aria-expanded="false" id="navbarText" style="border-top-style: solid; border-bottom-style: solid; border-color: coral; border-width: 1px; margin-bottom: 20px;">
+          <div class="container">  
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 700; color: black;" href="#">About Me<span class="sr-only">(current)</span></a>
+              </li>
+              <span class="divider"></span>
+              <li class="nav-item">
+                <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 100; color: black;" href="#">Videos</a>
+              </li>
+               <span class="divider"></span>
+              <li class="nav-item">
+                <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 700; color: black;" href="#">Travel</a>
+              </li>
+               <span class="divider"></span>
+              <li class="nav-item">
+                <a class="nav-link" style="font-family:'Amatic SC', cursive; font-size: 2.5rem; font-weight: 100; color: black;" href="#">Photos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+ 
     <div class="container">
+      
       <div class="row">
         <div class="col">
           <div id="carouselSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -68,30 +97,110 @@
             </div>
           </div>
         </div>
-      </div>  
-      <div class="row">
-        <div class="col-12 col-lg-6 text-center">
-          <div>
-            <p style="font-family:'Amatic SC', cursive; font-size: 1.5rem; font-weight: 700; color: black;"> Here I am </p>
-            <div class="display: d-flex justify-content-center">
+      </div> 
+      
+      <section>        
+        <header>
+          <p style="font-family:'Amatic SC', cursive; font-size: 3.5rem; font-weight: 700; color: black; text-align: center;">Where am I?</p>
+        </header>  
+        <div class="row">
+          <div class="col-12 col-lg-6 text-center">                          
+            <div class="d-flex justify-content-center">
+              <img src="images/paper_plane.png"><span><h1>Location</h1><h2>London - UK</h2></span>
+            </div>
+            <img src="images/where_am_I_brasil.png" class="img-fluid" style="width: 100%">             
+          </div>
+          <div class="col-12 col-lg-6 text-center">
+            <div class="d-flex justify-content-center">
               <img src="images/paper_plane.png"><span><h1>Location</h1><h2>London - UK</h2></span>
             </div>
             <img src="images/where_am_I_brasil.png" class="img-fluid" style="width: 100%">
-          </div> 
+          </div>
         </div>
-        <div class="col-12 col-lg-6 text-center">
-          <div>
-            <p style="font-family:'Amatic SC', cursive; font-size: 1.5rem; font-weight: 700; color: black;"> Here I am </p>
-            <div class="display: d-flex justify-content-center">
-              <img src="images/paper_plane.png"><span><h1>Location</h1><h2>London - UK</h2></span>
-            </div>
-            <img src="images/where_am_I_brasil.png" class="img-fluid" style="width: 100%">
-          </div>  
+      </section>
+      
+      <section>        
+        <header>
+          <p style="font-family:'Amatic SC', cursive; font-size: 3.5rem; font-weight: 700; color: black; text-align: center;">Lastest Posts</p>
+        </header>
+        <div class="row mb-4">
+          <div class="col-12 col-lg-6 pr-3 text-center">                          
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post1_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>            
+          </div>
+          <div class="col-12 col-lg-6 pl-3 text-center">
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post2_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>             
+          </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-center image_animation">
-          <img src="MicaMoraes.png" height="40">
-      </div>
+        <div class="row mb-4">
+          <div class="col-12 col-lg-6 pr-3 text-center">                          
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post3_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>            
+          </div>
+          <div class="col-12 col-lg-6 pl-3 text-center">
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post4_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>            
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12 col-lg-6 pr-3 text-center">                          
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post5_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>            
+          </div>
+          <div class="col-12 col-lg-6 pl-3 text-center">
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post6_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>            
+          </div>
+        </div>        
+      </section>
+      
+      <section>        
+        <header>
+          <p style="font-family:'Amatic SC', cursive; font-size: 3.5rem; font-weight: 700; color: black; text-align: center;">Social Medias</p>
+        </header>
+        <div class="row mb-4">
+          <div class="col-12 col-lg-6 pr-3 text-center align-items-start">                          
+            <p style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">INSTAGRAM</p>
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post1_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>            
+          </div>
+          <div class="col-12 col-lg-6 pl-3 text-center align-items-start">
+            <p style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">FACEBOOK</p>
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post2_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>             
+          </div>
+        </div>       
+      </section>
+      
+      
+      <section>        
+        <header>
+          <p style="font-family:'Amatic SC', cursive; font-size: 3.5rem; font-weight: 700; color: black; text-align: center;">Videos</p>
+        </header>
+        <div class="row mb-4">
+          <div class="col-12 col-lg-6 pr-3 text-center align-items-start">                          
+            <p style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">Video 1</p>
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post1_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>            
+          </div>
+          <div class="col-12 col-lg-6 pl-3 text-center align-items-start">
+            <p style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">Video 2</p>
+            <img class="figure-img img-fluid rounded shadow-lg" src="images/post/post2_thumb.jpg">
+            <figcaption class="figure-caption text-center" style="font-family:'Amatic SC', cursive; font-size: 2.0rem; font-weight: 700; color: black;">food, travels / tuesday march 6th, 2018</figcaption>             
+          </div>
+        </div>       
+      </section>
+      
+      <footer>
+      
+      </footer>
+      
+      
+      
+        <div class="d-flex justify-content-center image_animation">
+            <img src="MicaMoraes.png" height="40">
+        </div>
     </div>
     
     
