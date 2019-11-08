@@ -1,5 +1,29 @@
 
-  
+
+.font_decorative {
+  font-family: 'Special Elite', cursive;
+}
+
+.font_decorative-size--h1 {
+  font-size: 3.5rem; 
+  text-align: center;
+}
+
+.font_decorative-size--h2 {
+  font-size: 2.0rem; 
+  text-align: center;
+}
+
+.font_decorative-size--menu {
+  font-size: 2.0rem; 
+  text-align: center;
+  color: black;
+}
+
+.font_decorative-size--picture {
+  font-size: 1.5rem; 
+}
+
 .icon {
     margin-left: 5px
 }
@@ -17,15 +41,26 @@
   
 }
 
-
 .carousel {
     border-radius: 10px 10px 10px 10px;
     overflow: hidden;
 }
 
 span.divider {
+  border-color: coral;
   border-right-style: solid;  
   height: 2.5rem;
+}
+
+/* change the color of normal links */
+.navbar-custom .nav-item .nav-link{
+  color: black;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+a:hover {
+  color: coral;
 }
 
 @media (min-width: 992px) {
@@ -50,8 +85,8 @@ span.divider {
     border-right: 3px solid; 
     border-color: black;
   }
-  
-  .block_navbar1--display {
+    
+  .container_navbar1--display {
     display: none !important;
   }
 
@@ -60,4 +95,13 @@ span.divider {
   }
 }
 
+
+/* footer styles
+-------------------------------------------------- */
+.footer {
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: coral;
+}
 
