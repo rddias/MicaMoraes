@@ -92,6 +92,9 @@ a:hover {
 
   .block_navbar2--display {
     display: flex !important;
+    padding: 0;
+    margin-top: 10px;
+    background-color: rgba(255, 128, 82, 0.1);
   }
 }
 
